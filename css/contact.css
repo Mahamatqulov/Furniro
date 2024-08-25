@@ -1,0 +1,283 @@
+@import url(../css/global.css);
+.fon-container {
+  width: 100%;
+  height: 30rem;
+  background-image: url(../imges/fon-4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 5rem;
+}
+
+span {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #4b4b4b;
+}
+
+h1 {
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+}
+
+.icon5 {
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+}
+
+.box-all {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.2rem;
+  line-height: 5.4rem;
+}
+
+.text-p {
+  padding: 1rem 40rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #9f9f9f;
+}
+
+.box-all-content {
+  display: flex;
+  text-align: left;
+}
+
+.content-add-ph-w {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+  position: relative;
+  left: 28rem;
+  top: 14rem;
+}
+
+.box-address {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box-address img {
+  position: relative;
+  bottom: 5rem;
+  right: 1rem;
+}
+
+.box-phone img {
+  position: relative;
+  bottom: 3.5rem;
+  right: 1rem;
+}
+
+.box-working img {
+  position: relative;
+  bottom: 2.5rem;
+  right: 1rem;
+}
+
+.add-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.box-phone {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.box-working {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.working-text {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.form-container {
+  background-color: white;
+  padding: 2rem;
+  max-width: 40rem;
+  width: 100%;
+  position: relative;
+  left: 40rem;
+  top: 10rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 2rem;
+  margin-bottom: 4.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn-input {
+  max-width: 20rem;
+  background-color: #c49c59;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn-input:hover {
+  background-color: #a37e43;
+}
+
+.box-card {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+h4 {
+  font-size: 2.5rem;
+  line-height: 3.7rem;
+}
+
+.box-text {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: #898989;
+}
+
+.content-10 {
+  display: flex;
+  justify-content: space-around;
+  gap: 5.5rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.section-bakcround {
+  background-color: #faf3ea;
+  padding: 5rem 0;
+  margin-top: 15rem;
+}
+
+footer {
+  margin-top: 8rem;
+  border-top: 1px solid #000;
+}
+
+.content-9 {
+  display: flex;
+  justify-content: space-between;
+  padding: 6.8rem 3rem 3rem 10rem;
+}
+
+.ftr-box {
+  max-width: 28.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.ftr-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5.5rem;
+}
+
+.ftr-text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  color: #9f9f9f;
+}
+
+.ftr-text1 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  color: #9f9f9f;
+}
+
+.ftr-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+.form-ftr {
+  display: flex;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 1px;
+  position: relative;
+  right: 5rem;
+}
+
+.ftr-button {
+  max-width: 10rem;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 1px;
+  background: none;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
+  bottom: 8.6rem;
+  left: 20rem;
+}
+
+.content-11 {
+  border-top: 1px solid #000;
+  padding-top: 3rem;
+}
+
+.ftr-text2 {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  position: relative;
+}
+
+.ftr-text-10 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+}

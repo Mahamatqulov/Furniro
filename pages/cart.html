@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
+    <title>Cart</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -22,12 +22,12 @@
       sizes="16x16"
       href="../favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
     <link
       href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
   </head>
 
   <body>
@@ -72,11 +72,10 @@
       <div class="fon-container">
         <div class="container">
           <div class="content">
-            <img src="../imges/Logos.png" alt="" />
-            <h1>Contact</h1>
+            <img src="./imges/Logos.png" alt="" />
+            <h1>Cart</h1>
             <a class="icon5" href="../index.html"
-              >Home <img src="../imges/icon5.png" alt="" />
-              <span>Contact</span></a
+              >Home <img src="../imges/icon5.png" alt="" /> <span>Cart</span></a
             >
           </div>
         </div>
@@ -85,87 +84,45 @@
     <main>
       <section>
         <div class="container">
-          <div class="box-all">
-            <h2>Get In Touch With Us</h2>
-            <p class="text-p">
-              For More Information About Our Product & Services. Please Feel
-              Free To Drop Us An Email. Our Staff Always Be There To Help You
-              Out. Do Not Hesitate!
-            </p>
-            <div class="box-all-content">
-              <div class="content-add-ph-w">
-                <div class="box-address">
-                  <img src="../imges/locatsiya.png" width="22px" alt="" />
-                  <div>
-                    <h4>Address</h4>
-                    <p class="add-text">
-                      236 5th SE Avenue, New York NY10000, United States
-                    </p>
-                  </div>
+          <div class="content">
+            <div class="content-1">
+              <div class="content-card">
+                <h3>Product</h3>
+                <h3>Price</h3>
+                <h3>Quantity</h3>
+                <h3>Subtotal</h3>
+              </div>
+              <div class="content-box">
+                <img src="../imges/img 146.png" alt="" />
+                <div class="box-span">
+                  <span>Asgaard sofa</span>
+                  <span>Rs. 250,000.00</span>
+                  <button class="btn-b">1</button>
+                  <span class="style-span1">Rs. 250,000.00</span>
                 </div>
-                <div class="box-phone">
-                  <img src="../imges/phone.png" alt="" />
-                  <div>
-                    <h4>Phone</h4>
-                    <a href="tel: +(84) 546-6789">Mobile: +(84) 546-6789 </a
-                    ><br />
-                    <a href="tel: +(84) 456-6789">Hotline: +(84) 456-6789</a>
-                  </div>
+                <img
+                  class="box-img"
+                  src="../imges/icon10.png"
+                  width="28"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="box-cart">
+              <h2>Cart Totals</h2>
+              <div>
+                <div class="box-text11">
+                  <h3>Subtotal</h3>
+                  <span>Rs. 250,000.00</span>
                 </div>
-                <div class="box-working">
-                  <img src="../imges/time.png" alt="" />
-                  <div>
-                    <h4>Working Time</h4>
-                    <p class="working-text">
-                      Monday-Friday: 9:00 - 22:00 <br />Saturday-Sunday: 9:00 -
-                      21:00
-                    </p>
-                  </div>
+                <div class="box-text11">
+                  <h3>Total</h3>
+                  <span class="style-span">Rs. 250,000.00</span>
                 </div>
               </div>
 
-              <div class="container">
-                <div class="form-container">
-                  <form>
-                    <label for="name">Your name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      placeholder="Abc"
-                      required
-                    />
-
-                    <label for="email">Email address</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="Abc@def.com"
-                      required
-                    />
-
-                    <label for="subject">Subject</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      placeholder="This is an optional"
-                    />
-
-                    <label for="message">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
-                      placeholder="Hi! I'd like to ask about"
-                      required
-                    ></textarea>
-
-                    <button class="btn-input" type="submit">Submit</button>
-                  </form>
-                </div>
-              </div>
+              <a class="btn-a" href="#">Check Out</a>
             </div>
           </div>
         </div>
@@ -238,11 +195,7 @@
             </ul>
             <form class="form-ftr">
               <label>
-                <input
-                  class="input"
-                  type="email"
-                  placeholder="Enter Your Email Address"
-                />
+                <input type="email" placeholder="Enter Your Email Address" />
               </label>
               <button class="ftr-button">SUBSCRIBE</button>
             </form>

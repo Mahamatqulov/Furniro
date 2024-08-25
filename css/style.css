@@ -1,99 +1,5 @@
-@font-face {
-  font-display: swap;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/poppins-v21-latin-500.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/poppins-v21-latin-700.woff2") format("woff2");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
-.container {
-  max-width: 144rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem 2rem;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2.9rem 10rem 3rem 5.4rem;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 5rem;
-}
-
-.menu_1 {
-  display: flex;
-  align-items: center;
-  gap: 15.8rem;
-}
-
-ul,
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  font-family: 500;
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-  color: #000;
-}
-
-.fon-conatiner {
+@import url(./global.css);
+.fon-continer {
   width: 100%;
   height: 78rem;
   background-image: url(../imges/fon-1.png);
@@ -213,13 +119,6 @@ s {
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: #b0b0b0;
-}
-
-.card2 {
-  padding: 1.6rem 1rem 3rem 1.6rem;
-  background-color: #f4f5f7;
-  position: relative;
-  bottom: 5px;
 }
 
 .btn2 {
@@ -351,6 +250,9 @@ input {
 
 .card-img {
   width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .icon {
@@ -375,4 +277,118 @@ input {
   border-radius: 100%;
   font-size: 16px;
   font-weight: bold;
+}
+
+.card {
+  position: relative;
+  width: 285px;
+  overflow: hidden;
+}
+
+/* Asosiy rasm */
+
+.card img {
+  width: 100%;
+  display: block;
+}
+
+/* Overlay, boshida yashirin */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlaydagi tugmalar va ijtimoiy tarmoq ikonlari */
+
+.overlay .btn-2 {
+  background-color: #fff;
+  color: #b88e2f;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.overlay .card-icon-li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.overlay .card-icon-li li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Hover qilinganda overlayni ko'rish */
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* Cardning pastki qismi */
+
+.card2 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.card2 h6 {
+  text-align: left;
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card2 {
+  padding: 1.6rem 1rem 3rem 1.6rem;
+  background-color: #f4f5f7;
+  text-align: left;
+  margin: 5px 0;
+  color: #666;
+  font-size: 1.4rem;
+}
+
+.card-icon-li {
+  display: flex;
+  gap: 5px;
+}
+
+.f1::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.f1:nth-child(1):before {
+  content: "\f1e0";
+}
+
+.f1:nth-child(2):before {
+  content: "\f337";
+}
+
+.f1:nth-child(3):before {
+  content: "\f004";
+}
+
+.f1 a {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #fff;
 }
